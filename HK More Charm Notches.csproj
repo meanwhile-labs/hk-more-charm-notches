@@ -6,7 +6,8 @@
         <TargetFramework>net472</TargetFramework>
         <AssemblyTitle>HK_More_Charm_Notches</AssemblyTitle>
         <Product>HK_More_Charm_Notches</Product>
-        <Description>A Hollow Knight mod that...</Description>
+        <Description>
+          A Hollow Knight mod that doubles the number of charm notches you have.</Description>
         <Copyright>Copyright © Meanwhile 2025</Copyright>
         <Authors>Meanwhile</Authors>
         <NoWarn>7035</NoWarn>
