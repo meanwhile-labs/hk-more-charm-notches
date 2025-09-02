@@ -6,11 +6,11 @@ permissions:
   attestations: write
 
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
+  # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
   workflow_dispatch:
     inputs:
       should_release:
@@ -33,7 +33,7 @@ jobs:
         uses: BadMagic100/setup-hk@v2
         with:
           apiPath: API
-          #dependencyFilePath: HK More Charm Notches/ModDependencies.txt
+          #dependencyFilePath: hk-more-charm-notches/ModDependencies.txt
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
@@ -48,7 +48,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Publish
-          path: HK More Charm Notches/bin/Publish
+          path: hk-more-charm-notches/bin/Publish
 
       - name: Generate attestation
         id: attest
@@ -56,7 +56,7 @@ jobs:
         uses: actions/attest-build-provenance@v2
         with:
           name: Publish
-          subject-path: HK More Charm Notches/bin/Publish/HK_More_Charm_Notches.zip
+          subject-path: hk-more-charm-notches/bin/Publish/HK_More_Charm_Notches.zip
   release:
     needs:
       - build
