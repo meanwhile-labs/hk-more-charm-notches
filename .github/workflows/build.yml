@@ -48,7 +48,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Publish
-          path: hk-more-charm-notches/bin/Publish
+          path: bin/Publish
 
       - name: Generate attestation
         id: attest
@@ -56,7 +56,7 @@ jobs:
         uses: actions/attest-build-provenance@v2
         with:
           name: Publish
-          subject-path: hk-more-charm-notches/bin/Publish/HK_More_Charm_Notches.zip
+          subject-path: bin/Publish/HK_More_Charm_Notches.zip
   release:
     needs:
       - build

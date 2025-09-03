@@ -8,7 +8,7 @@ I've found that being able to equip more charms makes the late game easier for t
 
 ### Can I still overcharm?
 
-Yup, no change there except the limit is higher.
+Yup, no change there, except that the limit is higher.
 
 ### What happens if I equip a bunch of charms and then disable or uninstall the mod?
 
